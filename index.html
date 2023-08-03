@@ -59,15 +59,15 @@
           <div class="column has-text-centered">
             <div class="publication-links">
               <!-- PDF Link. -->
-              <!-- <span class="link-block">
-                <a href=""
+              <span class="link-block">
+                <a href="https://arxiv.org/abs/2308.01477"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fas fa-file-pdf"></i>
                   </span>
                   <span>Paper</span>
                 </a>
-              </span> -->
+              </span>
 
               <!-- Video Link. -->
               <!-- <span class="link-block">
@@ -80,27 +80,26 @@
                 </a>
               </span> -->
 
-              <!-- Code Link. -->
-              <!-- <span class="link-block">
-                <a href="" class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fab fa-github"></i>
-                  </span>
-                  <span>Code (coming soon)</span>
-                  </a>
-              </span> -->
-
              <!-- Dataset Link. -->
               <span class="link-block">
-                <a href="https://drive.google.com/drive/folders/13J-SlGPX1YwQ6Ui92W0vCfUh7dSNZZXa?usp=sharing"
-                   class="external-link button is-normal is-rounded is-dark">
+                <a href="" class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="far fa-images"></i>
                   </span>
-                  <span>Dataset (sample)</span>
+                  <span>Dataset (coming soon)</span>
                   </a>
               </span>
-            </div>
+
+            <!-- Code Link. -->
+            <span class="link-block">
+              <a href="" class="external-link button is-normal is-rounded is-dark">
+                <span class="icon">
+                    <i class="fab fa-github"></i>
+                </span>
+                <span>Code (coming soon)</span>
+                </a>
+            </span>
+          </div>
 
           </div>
         </div>
@@ -120,12 +119,18 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            We present the HANDAL dataset for category-level object pose estimation and affordance prediction. Unlike previous datasets, ours is focused on robotics-ready manipulable objects that are of the proper size and shape for functional grasping by robot manipulators, such as pliers, utensils, and screwdrivers. Our annotation process is streamlined, requiring only a single off-the-shelf camera and semi-automated processing, allowing us to produce high-quality 3D annotations without crowd-sourcing. The dataset consists of 169K annotated image frames from 1.1K videos of 111 real-world objects in 15 categories. We focus on hardware and kitchen tool objects to facilitate research in practical scenarios in which a robot manipulator needs to interact with the environment beyond simple pushing or indiscriminate grasping. We outline the usefulness of our dataset for 6-DoF category-level pose+scale estimation and related tasks. We also provide 3D reconstructed meshes of all objects, and we outline some of the bottlenecks to be addressed for democratizing the collection of datasets like this one.
+            We present the HANDAL dataset for category-level object pose estimation and affordance prediction. Unlike previous datasets, ours is focused on robotics-ready manipulable objects that are of the proper size and shape for functional grasping by robot manipulators, such as pliers, utensils, and screwdrivers. Our annotation process is streamlined, requiring only a single off-the-shelf camera and semi-automated processing, allowing us to produce high-quality 3D annotations without crowd-sourcing. The dataset consists of 308k annotated image frames from 2.2k videos of 212 real-world objects in 17 categories. We focus on hardware and kitchen tool objects to facilitate research in practical scenarios in which a robot manipulator needs to interact with the environment beyond simple pushing or indiscriminate grasping. We outline the usefulness of our dataset for 6-DoF category-level pose+scale estimation and related tasks. We also provide 3D reconstructed meshes of all objects, and we outline some of the bottlenecks to be addressed for democratizing the collection of datasets like this one. Project website:
           </p>
-          <img src="static/images/intro.jpg">
+          <img src="static/images/intro.png">
         </div>
       </div>
     </div>
+
+    <br>
+    <br>
+    <h2 class="title is-3"; style="text-align: center;">Dataset attributes comparison</h2>
+    <img src="static/images/comparison_table.png" style="margin-left: auto; margin-right: auto; display: block;">
+
 
     <!-- Paper video. -->
     <br>
@@ -155,7 +160,7 @@
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <h2 class="title is-3">Diverse object instances</h2>
-          <img src="static/images/objects.jpg">
+          <img src="static/images/allobjects.png">
       </div>
     </div>
 
@@ -168,6 +173,7 @@
       </div>
     </div>
 
+
     <br>
     <br>
     <h2 class="title is-3"; style="text-align: center;">Dataset stats</h2>
@@ -179,9 +185,22 @@
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <h2 class="title is-3">Pipeline</h2>
-          <img src="static/images/handal_workflow.png" style="max-width: 1000px">
+          <img src="static/images/handal_workflow.png" style="max-width: 800px">
       </div>
     </div>
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@article{handaliros23,
+  title={{HANDAL}: A Dataset of Real-World Manipulable Object Categories with Pose Annotations, Affordances, and Reconstructions},
+  author={Andrew Guo and Bowen Wen and Jianhe Yuan and Jonathan Tremblay and Stephen Tyree and Jeffrey Smith and Stan Birchfield},
+  journal={IROS},
+  year={2023}
+}</code></pre>
+  </div>
+</section>
+
 
     <br>
     <br>
