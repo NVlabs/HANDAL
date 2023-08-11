@@ -167,9 +167,9 @@
     <br>
     <br>
     <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
+      <div width="140%">
         <h2 class="title is-3">Diverse pose coverage</h2>
-          <img src="static/images/cam_pose_lon_lat.png" style="max-width: 500px">
+          <img src="static/images/cam_pose_lon_lat.png" style="max-width: 1100px">
       </div>
     </div>
 
@@ -192,7 +192,7 @@
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
     <h2 class="title">BibTeX</h2>
-    <pre><code>@inproceedings{handaliros23,
+    <pre><code>@InProceedings{handaliros23,
   title={{HANDAL}: A Dataset of Real-World Manipulable Object Categories with Pose Annotations, Affordances, and Reconstructions},
   author={Andrew Guo and Bowen Wen and Jianhe Yuan and Jonathan Tremblay and Stephen Tyree and Jeffrey Smith and Stan Birchfield},
   booktitle={IROS},
@@ -218,30 +218,6 @@
 </section>
 
 
-
-
-<!-- <section class="hero">
-  <div class="hero-body">
-    <div class="container is-max-desktop">
-      <div class="columns is-centered">
-        <h2 class="title is-3">3D models</h2>
-      </div>
-      <div class="columns is-centered">
-        <span>
-          <model-viewer alt="chair"
-          src="static/models/AP13/AP13.glb"
-          shadow-intensity="1"
-          ar environment-image="static/models/thatch_chapel_2k.hdr"
-          auto-rotate rotation-per-second="40deg"
-          camera-controls touch-action="pan-y"
-          >
-          </model-viewer>
-        </span>
-      </div>
-    </div>
-  </div>
-</section> -->
-
 <style>
 model-viewer {
   width: 400px;
@@ -249,211 +225,6 @@ model-viewer {
 }
 </style>
 
-
-
-
-<!-- <section class="hero">
-  <div class="hero-body">
-    <div class="container is-max-desktop">
-      <div class='title is-3'>Interactive Results</div>
-      <div class='title is-4 has-text-centered'>Dataset</div>
-
-      <div class="columns">
-        <div class="column has-text-centered">
-          <span id="ap13" class="button is-info is-rounded">
-            HO3D AP13
-          </span>
-          <span id="sm1" class="button is-normal is-rounded">
-            HO3D SM1
-          </span>
-          <span id="bechair" class="button is-normal is-rounded">
-            BEHAVE Chair
-          </span>
-          <span id="betable" class="button is-normal is-rounded">
-            BEHAVE Table
-          </span>
-          <span id="mustard" class="button is-normal is-rounded">
-            YCBinEOAT
-          </span>
-        </div>
-      </div>
-      <div class="has-text-centered">
-        <div class="columns">
-          <div class="column has-text-centered ">
-            <span id="1_gt" class="button is-info is-rounded">
-              Ground Truth
-            </span>
-            <span id="1_ours" class="button is-normal is-rounded">
-              Ours
-            </span>
-            <span id="1_bundletrack" class="button is-normal is-rounded">
-              BundleTrack
-            </span>
-            <span id="1_droid" class="button is-normal is-rounded">
-              DROID
-            </span>
-            <span id="1_sdf" class="button is-normal is-rounded">
-              SDF2SDF
-            </span>
-            <span id="1_nice" class="button is-normal is-rounded">
-              NICESLAM
-            </span>
-            <span id="1_kinect" class="button is-normal is-rounded">
-              KinectFusion
-            </span>
-          </div>
-        </div>
-        <div class="columns is-vcentered">
-          <div class="column is-centered">
-            <span class="link-block">
-              <video id="v1" style="max-height: 300px;" autoplay muted loop controls playsinline height="100%">
-                <source src="https://i.imgur.com/yY0myqN.mp4"
-                    type="video/mp4">
-              </video>
-            </span>
-          </div>
-          <div class="column is-centered">
-            <span>
-              <model-viewer id="m1" alt="chair"
-              src="static/models/AP13/AP13_gt.glb"
-              shadow-intensity="1"
-              ar environment-image="static/models/thatch_chapel_2k.hdr"
-              auto-rotate rotation-per-second="40deg"
-              camera-controls touch-action="pan-y"
-              >
-              </model-viewer>
-            </span>
-          </div>
-        </div>
-      </div>
-      <br>
-      <div class="has-text-centered">
-        <div class="columns">
-          <div class="column has-text-centered">
-            <span id="2_gt" class="button is-normal is-rounded">
-              Ground Truth
-            </span>
-            <span id="2_ours" class="button is-info is-rounded">
-              Ours
-            </span>
-            <span id="2_bundletrack" class="button is-normal is-rounded">
-              BundleTrack
-            </span>
-            <span id="2_droid" class="button is-normal is-rounded">
-              DROID
-            </span>
-            <span id="2_sdf" class="button is-normal is-rounded">
-              SDF2SDF
-            </span>
-            <span id="2_nice" class="button is-normal is-rounded">
-              NICESLAM
-            </span>
-            <span id="2_kinect" class="button is-normal is-rounded">
-              KinectFusion
-            </span>
-          </div>
-        </div>
-        <div class='columns is-vcentered'>
-          <div class="column is-centered">
-            <span>
-              <video style="max-height: 300px;" id="v2" autoplay muted loop playsinline height="100%">
-                <source src="https://i.imgur.com/JtkzjxE.mp4"
-                    type="video/mp4">
-              </video>
-              <br>
-              <p>automatically synchronized with video above</p>
-            </span>
-          </div>
-          <div class="column is-centered">
-            <span>
-              <model-viewer id='m2' alt="chair"
-              src="static/models/AP13/AP13_ours.glb"
-              shadow-intensity="1"
-              ar environment-image="static/models/thatch_chapel_2k.hdr"
-              auto-rotate rotation-per-second="40deg"
-              camera-controls touch-action="pan-y"
-              >
-              </model-viewer>
-            </span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section> -->
-
-
-<!-- <section class="hero">
-  <div class="hero-body">
-    <div class="container is-max-desktop">
-      <div class='title is-3'>Our Method in the Wild</div>
-      <div class='title is-5'>Pumpkin doll (captured by iPhone)</div>
-       <div class='columns is-vcentered'>
-        <div class="column is-centered has-text-centered">
-          <span style="text-align:center;">
-            <video style="text-align:center; max-height: 400px;" id="v3" autoplay muted loop playsinline controls height="100%">
-              <source src="static/videos/pumpkin_track_recon_synced_crop.mp4" type="video/mp4">
-            </video>
-          </span>
-        </div>
-        <div class="column is-centered has-text-centered">
-          <span class="has-text-centered">
-            <model-viewer style="max-height: 100px;" id='m3' alt="chair"
-            src="static/models/pumpkin.glb"
-            shadow-intensity="1"
-            ar environment-image="static/models/thatch_chapel_2k.hdr"
-            auto-rotate rotation-per-second="40deg"
-            camera-controls touch-action="pan-y"
-            >
-            </model-viewer>
-          </span>
-
-        </div>
-      </div>
-      <div class='columns is-vcentered'>
-        <div class="column is-centered">
-          <p style="text-align: center">Tracking and reconstruction over time</p>
-        </div>
-        <div style="text-align: center"class="column is-centered">
-          Final reconstruction (interactable)
-        </div>
-      </div>
-
-      <div class='title is-5'>Milk jug (captured by Intel RealSense)</div>
-       <div class='columns is-vcentered'>
-        <div class="column is-centered has-text-centered">
-          <span style="text-align:center;">
-            <video style="text-align:center; max-height: 400px;" id="v3" autoplay muted loop playsinline controls height="100%">
-              <source src="static/videos/milk_grow_track_synced_cropped.mp4" type="video/mp4">
-            </video>
-          </span>
-        </div>
-        <div class="column is-centered has-text-centered">
-          <span class="has-text-centered">
-            <model-viewer style="max-height: 100px;" id='m3' alt="chair"
-            src="static/models/milk.glb"
-            shadow-intensity="1"
-            ar environment-image="static/models/thatch_chapel_2k.hdr"
-            auto-rotate rotation-per-second="40deg"
-            camera-controls touch-action="pan-y"
-            >
-            </model-viewer>
-          </span>
-
-        </div>
-      </div>
-      <div class='columns is-vcentered'>
-        <div class="column is-centered">
-          <p style="text-align: center">Tracking and reconstruction over time</p>
-        </div>
-        <div style="text-align: center"class="column is-centered">
-          Final reconstruction (interactable)
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section> -->
 
 
 
