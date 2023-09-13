@@ -5,8 +5,9 @@
 Dataset is now available for manual [download](https://drive.google.com/drive/folders/1ANTZAXDbZbszyxa7ZO9_DcFHe8tbdCIN?usp=drive_link).  Automated tools are forthcoming...
 
 Dataset follows the [BOP format](https://github.com/thodan/bop_toolkit/blob/master/docs/bop_datasets_format.md), with some minor modifications:
-- Image size is provided in the info file (since multiple camera sensors were used to capture data)
+- Image size is provided in the `scene_camera.json` info file (since multiple camera sensors were used to capture data)
 - Depth is from NeRF ([Instant NGP](https://github.com/NVlabs/instant-ngp)) rather than from a depth sensor
+- RGB images are compressed using JPEG rather than PNG
 
 *(Note:  Not all categories are available yet.  Some are uploading, others are still processing.  Stay tuned over the next several days...)*
 
