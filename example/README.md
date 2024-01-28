@@ -1,0 +1,1 @@
+Three example scenes (a reference scan of a drill, plus two scans of the same drill in different scenes) may be downloaded from [Google Drive](https://drive.google.com/drive/folders/1znqQgfNfe5yoDd3SVy7JJfkAy4CXRTpy?usp=sharing) and extracted here. Object segmentation masks are already provided for these examples in the `input_masks/` directory.

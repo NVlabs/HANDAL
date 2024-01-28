@@ -1,0 +1,12 @@
+colmap.db*
+colmap_sparse
+colmap_text
+
+data/
+**__pycache__**
+imgui.ini
+
+commands.sh
+
+*.jpg
+*.png

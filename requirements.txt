@@ -1,0 +1,10 @@
+git+https://github.com/thodan/bop_toolkit.git
+decord
+flask>=2.2.5
+numpy
+open3d>=0.18.0
+opencv-python 
+rich
+scipy
+tqdm 
+trimesh[easy]
