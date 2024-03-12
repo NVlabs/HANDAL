@@ -10,3 +10,6 @@ commands.sh
 
 *.jpg
 *.png
+example/
+!example/README.md
+submodules/*
