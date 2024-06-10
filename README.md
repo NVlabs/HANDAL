@@ -46,7 +46,7 @@ conda activate handal-toolkit
 cd HANDAL
 git clone --recursive https://github.com/nvlabs/instant-ngp submodules/instant-ngp
 cd submodules/instant-ngp
-conda install -c conda-forge libgcc-ng libstdcxx-ng cmake  # fix the missing GLIBCXX 3.4.30 error
+conda install -c conda-forge libstdcxx-ng=12 --yes  # fix the missing GLIBCXX 3.4.30 error
 pip install -r requirements.txt
 cmake . -B build -DCMAKE_BUILD_TYPE=RelWithDebInfo
 cmake --build build --config RelWithDebInfo -j
