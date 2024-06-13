@@ -128,6 +128,7 @@ for COLMAP_MATCHER in sequential exhaustive; do
             mkdir $SCENE_PATH/colmap_$COLMAP_MATCHER
         fi
         ( 
+            CONFIG_NGP_PATH=$(realpath $CONFIG_NGP_PATH)
             cd $SCENE_PATH &&
             python $CONFIG_NGP_PATH/scripts/colmap2nerf.py \
                 --run_colmap \
