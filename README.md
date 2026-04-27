@@ -1,5 +1,7 @@
 # HANDAL
 
+:tada: *An updated version of HANDAL is included in the [BOP Benchmark](https://bop.felk.cvut.cz/datasets/#HANDAL), with high-quality artist-generated meshes for 40 objects, additional multi-object test images, and both static and dynamic/in-hand object onboarding sequences.* :tada:
+
 <img src="intro.jpeg">
 
 ## HANDAL Dataset
