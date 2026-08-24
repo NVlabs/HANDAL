@@ -31,7 +31,7 @@ Our toolkit requires an NVIDIA GPU capable of running [Instant-NGP](https://gith
 We recommend installing the HANDAL pipeline in a separate Python environment, using Python 3.10 or greater.
 ```
 conda create -n handal-toolkit python=3.10
-git clone https://https://github.com/NVlabs/HANDAL.git
+git clone https://github.com/NVlabs/HANDAL.git
 cd HANDAL
 pip install -r requirements.txt 
 ```
